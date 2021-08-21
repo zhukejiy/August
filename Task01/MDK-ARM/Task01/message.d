@@ -1,8 +1,8 @@
-task01\message.o: ..\..\F407\Middlewares\Third_Party\SoftWare\message.c
-task01\message.o: ..\..\F407\Middlewares\Third_Party\SoftWare\message.h
+task01\message.o: C:\Users\lenovo\ProAug\Task01\Middlewares\SoftWares\message.c
+task01\message.o: C:\Users\lenovo\ProAug\Task01\Middlewares\SoftWares\message.h
 task01\message.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-task01\message.o: ..\..\F407\Middlewares\Third_Party\SoftWare\motor.h
-task01\message.o: ..\..\F407\Middlewares\Third_Party\SoftWare\pid.h
+task01\message.o: C:\Users\lenovo\ProAug\Task01\Middlewares\SoftWares\motor.h
+task01\message.o: C:\Users\lenovo\ProAug\Task01\Middlewares\SoftWares\pid.h
 task01\message.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 task01\message.o: ../Core/Inc/dma.h
 task01\message.o: ../Core/Inc/main.h

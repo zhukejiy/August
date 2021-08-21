@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "message.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,7 +46,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
+osEvent evt;
 /* USER CODE END Variables */
 osThreadId MsgHandle;
 osThreadId MotorHandle;
@@ -137,7 +137,10 @@ void taskMsg(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+		RemoteData_t RDMsg;
+		RemoteDataMsg_Process(&RDMsg);
+		osMessagePut(MsgToMtHandle, (uint32_t)&RDMsg, 0);
+    osDelay(10);
   }
   /* USER CODE END taskMsg */
 }
@@ -152,10 +155,17 @@ void taskMsg(void const * argument)
 void taskMotor(void const * argument)
 {
   /* USER CODE BEGIN taskMotor */
+	 RemoteData_t *RDMsg;
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+		evt = osMessageGet(MsgToMtHandle,0);
+        if(evt.status == osEventMessage)
+        {
+            RDMsg = (RemoteData_t*)evt.value.v;
+        } 
+
+        osDelay(5);
   }
   /* USER CODE END taskMotor */
 }

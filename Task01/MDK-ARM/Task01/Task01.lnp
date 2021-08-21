@@ -39,6 +39,7 @@
 "task01\cmsis_os.o"
 "task01\heap_4.o"
 "task01\port.o"
+"task01\pid.o"
 --library_type=microlib --strict --scatter "Task01\Task01.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

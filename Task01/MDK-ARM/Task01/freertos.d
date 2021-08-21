@@ -46,3 +46,7 @@ task01\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 task01\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 task01\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 task01\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+task01\freertos.o: ../Middlewares/SoftWares/message.h
+task01\freertos.o: ../Middlewares/SoftWares/motor.h
+task01\freertos.o: ../Middlewares/SoftWares/pid.h
+task01\freertos.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

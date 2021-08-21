@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy; ../Middlewares/Third_Party/FreeRTOS/Source/include; ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS; ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F; ../Drivers/CMSIS/Device/ST/STM32F4xx/Include; ../Drivers/CMSIS/Include; ..\..\F407\Middlewares\Third_Party\SoftWare; ..\..\F407\Middlewares\Third_Party\SoftWare; ..\..\F407\Middlewares\Third_Party\SoftWare; ..\..\F407\Core\Inc</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../Middlewares/SoftWares;../Middlewares/SoftWares;../Middlewares/SoftWares;../Middlewares/SoftWares</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -546,12 +546,12 @@
             <File>
               <FileName>message.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\F407\Middlewares\Third_Party\SoftWare\message.c</FilePath>
+              <FilePath>C:\Users\lenovo\ProAug\Task01\Middlewares\SoftWares\message.c</FilePath>
             </File>
             <File>
               <FileName>motor.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\F407\Middlewares\Third_Party\SoftWare\motor.c</FilePath>
+              <FilePath>C:\Users\lenovo\ProAug\Task01\Middlewares\SoftWares\motor.c</FilePath>
             </File>
             <File>
               <FileName>croutine.c</FileName>
@@ -602,6 +602,11 @@
               <FileName>port.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c</FilePath>
+            </File>
+            <File>
+              <FileName>pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>C:\Users\lenovo\ProAug\Task01\Middlewares\SoftWares\pid.c</FilePath>
             </File>
           </Files>
         </Group>
