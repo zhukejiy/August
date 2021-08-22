@@ -142,6 +142,13 @@ void CAN1_FilterInit(void)
     HAL_CAN_ActivateNotification(&hcan1,CAN_IT_RX_FIFO0_MSG_PENDING | CAN_IT_TX_MAILBOX_EMPTY);
 }
 
+
+void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef* _hcan)
+{
+	
+}
+
+
 CAN_TxHeaderTypeDef CAN1TxMsg;
 void CAN1_Transmit(uint16_t ID,uint8_t *pData)
 {
