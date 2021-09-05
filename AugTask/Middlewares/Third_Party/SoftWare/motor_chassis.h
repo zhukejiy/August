@@ -29,6 +29,7 @@
 /* includes ------------------------------------------------------------------*/
 #include <stdint.h>
 #include "pid.h"
+#include "message.h"
 /* typedef -------------------------------------------------------------------*/
 typedef struct _MotorData_t
 {
@@ -61,8 +62,16 @@ typedef struct _Motor_Chassis_t
 extern M3508_t M3508[4];
 extern Motor_Chassis_t Chassis;
 /* function ------------------------------------------------------------------*/
+
+void Remote_Control_GetMoveData(RemoteData_t);
+
+void Motor_Chassis_Init(void);
+	
 int16_t constrain_int16_t(int16_t amt, int16_t low, int16_t high); 
 void Motor_Chassis_CanTransmit(void);
+
+void Motor_Chassis_PidRun(void);
+void Chassis_Process(RemoteData_t RDMsg);
 #ifdef __cplusplus
 }
 #endif

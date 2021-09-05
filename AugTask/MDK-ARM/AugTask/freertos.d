@@ -51,3 +51,4 @@ augtask\freertos.o: ..\Middlewares\Third_Party\SoftWare\message.h
 augtask\freertos.o: ..\Middlewares\Third_Party\SoftWare\motor.h
 augtask\freertos.o: ..\Middlewares\Third_Party\SoftWare\pid.h
 augtask\freertos.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+augtask\freertos.o: ..\Middlewares\Third_Party\SoftWare\motor_chassis.h

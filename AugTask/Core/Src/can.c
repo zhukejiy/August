@@ -173,22 +173,26 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
             CAN1_0x201_Rate++;
             Chassis.M3508[0].Rx.Speed   = Data[2] << 8 | Data[3];
             Chassis.M3508[0].Rx.Current = Data[4] << 8 | Data[5];
-        break;
+						Motor_Chassis_CanTransmit();
+            break;
         case 0x202:
             CAN1_0x202_Rate++;
             Chassis.M3508[1].Rx.Speed   = Data[2] << 8 | Data[3];
             Chassis.M3508[1].Rx.Current = Data[4] << 8 | Data[5];
-        break;
+						Motor_Chassis_CanTransmit();
+            break;
         case 0x203:
             CAN1_0x203_Rate++;
             Chassis.M3508[2].Rx.Speed   = Data[2] << 8 | Data[3];
-            Chassis.M3508[2].Rx.Current = Data[4] << 8 | Data[5];            
-        break;
+            Chassis.M3508[2].Rx.Current = Data[4] << 8 | Data[5];        
+						Motor_Chassis_CanTransmit();
+            break;
         case 0x204:
             CAN1_0x204_Rate++;
             Chassis.M3508[3].Rx.Speed   = Data[2] << 8 | Data[3];
             Chassis.M3508[3].Rx.Current = Data[4] << 8 | Data[5];
-        break;
+						Motor_Chassis_CanTransmit();
+            break;
         }
 }
 /* USER CODE END 1 */

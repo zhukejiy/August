@@ -28,6 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "usart.h"
 #include "message.h"
+#include "motor_chassis.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,7 +48,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
+osEvent evt;
 /* USER CODE END Variables */
 osThreadId MessageHandle;
 osThreadId ChassisMotorHandle;
@@ -156,10 +157,18 @@ void taskMessage(void const * argument)
 void taskChassisMotor(void const * argument)
 {
   /* USER CODE BEGIN taskChassisMotor */
+	RemoteData_t *RDMsg;
+  Motor_Chassis_Init();
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+		 evt = osMessageGet(MsgToCMHandle,0);
+     if(evt.status == osEventMessage)
+     {
+        RDMsg = (RemoteData_t*)evt.value.v;
+     } 
+		 Chassis_Process(*RDMsg);
+    osDelay(5);
   }
   /* USER CODE END taskChassisMotor */
 }

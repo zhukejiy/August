@@ -33,6 +33,8 @@ augtask\can.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 augtask\can.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 augtask\can.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 augtask\can.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-augtask\can.o: ..\Middlewares\Third_Party\SoftWare\motor.h
+augtask\can.o: ..\Middlewares\Third_Party\SoftWare\motor_chassis.h
 augtask\can.o: ..\Middlewares\Third_Party\SoftWare\pid.h
 augtask\can.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+augtask\can.o: ..\Middlewares\Third_Party\SoftWare\message.h
+augtask\can.o: ..\Middlewares\Third_Party\SoftWare\motor.h

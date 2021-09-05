@@ -43,7 +43,7 @@ void MX_USART1_UART_Init(void);
 void UART1_RemoteStart(void);
 
 extern uint8_t uart1_buf[18];
-extern uint8_t DR16_Rate;
+extern uint8_t DR16_Rx_Rate;
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
